@@ -1,0 +1,475 @@
+/*
+	Template:       Noxus
+	Theme URL:      https://noxus.fr
+	Author:         Sebastien P.
+	Author URL:     https://noxus.fr/creator
+	Description:    Noxus engine production ©
+	Contact:        contact@noxus.fr
+	Version:        1.0
+	License:        GNU General Public License v3 or later
+	License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+	Text Domain:    Noxus ©
+	Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- CONTENT -------
+
+*/
+/* -- Général contenu 										-- */
+	.sy-box{
+	    border-bottom: 5px solid #ff8c3f;
+	}
+	#content{
+	    padding: 20px 0px 80px 0px;
+	}
+	#content p{
+		padding: 10px 10px 10px 10px;
+	}
+	#content section.home_content{
+		margin: 0px 0px 0px 0px;
+	}
+	#content section.home_content .teg_container{
+		    width: 100%;
+            max-width: 1280px;
+            margin: auto;
+            color: #969dac;
+	}
+	h1, h2, h3, h4, h5{
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px ;
+	}
+/* -- Titres contenu 										-- */
+	#content h1{
+		padding: 10px 10px 10px 10px;
+	}
+	#content h2{
+		padding: 10px 10px 10px 10px;
+		font-size: 20px;
+	    color: #969dac;
+	    text-align: center;
+	}
+/* -- Général homepage										-- */
+    article.nxs-citation{
+        background-color: #f1f1f2;
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+    }
+    article.nxs-infos-cols .teg_container{
+        display: flex;
+        justify-content: center;
+        padding: 100px 80px 100px 80px;
+        text-align: center;
+    }
+    article.nxs-infos-cols .teg_container h1{
+		background-color: #ff8c3f;
+	    border-radius: 20px;
+	    width: 120px;
+	    margin: auto;
+	    color: #FFF;
+    }
+    article.nxs-apt{
+    	padding: 30px 0px 30px 0px;
+    	color: white;
+    	text-align: center;
+    	height: 600px;
+		background-image: url("../images/apt-back.png");
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		border-bottom: 3px solid #ff8c3f;
+    }
+    article.nxs-2-last-post {
+        background-color: #f1f1f2;
+        padding: 30px 0px 60px 0px;
+        text-align: center;
+       	color: #969dac;
+    }
+    article.nxs-2-last-post .nxs-2-last-post-top{
+		display: flex;
+		width: 100%;
+		line-height: 30px;
+		height: 40px;
+		justify-content: space-between;
+		padding-bottom: 10px;
+		margin: 20px 15px 20px 15px;
+		border-bottom: 1px solid #4f55601a;
+    }
+	article.nxs-2-last-post .nxs-2-last-post-top input[type="submit"]{
+            border:1px solid #969dac5c;
+            margin-right: 5px;
+	}
+	article.nxs-2-last-post .nxs-2-last-post-top input[type="submit"]:hover{
+			border:1px solid #ff8c3f;
+	}
+
+    article.nxs-2-last-post .nxs-2-last-post-top-l{
+		display: flex;
+    }
+    article.nxs-2-last-post .nxs-2-last-post-top-l h4{
+		margin-right: 30px;
+    }
+    article.nxs-2-last-post .nxs-2-last-post-top-l h4:before{
+		content: "";
+		position: relative;
+		margin-right: 5px;
+		display: inline-block;
+		width: 20px;
+		height: 8px;
+		background-color: #ff8c3f;
+    }
+    article.nxs-2-last-post .nxs-2-last-post-top-r{
+		display: flex;
+    }
+    article.nxs-2-last-post .teg_container{
+		padding: 0px 50px 0px 50px;
+    	display: flex;
+    }
+    article.nxs-newsletter{
+        text-align: center;
+        padding: 80px 0px 30px 0px;
+    }
+/* -- Widget release les 2 derniers post page d'accueil 	-- */
+	.nxs-release{
+		width: 455px;
+	    display: flex;
+	    height: 200px;
+	    margin: 0px 10px 20px 10px;
+	    padding: 0px 0px 0px 0px;
+	    background-color: #FFFFFF;
+		
+	}
+	.nxs-release-last{
+	    width: 100%;
+	    max-width: 455px;
+	    min-width: 455px;
+	    display: flex;
+	    height: 200px;
+	    flex-direction: column;
+
+	}
+	.nxs-release-last:hover{
+		cursor: pointer;
+	    box-shadow: 0 0 20px 0px #ababab90;
+	}
+	.nxs-release-last-content{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: left;
+		height: 30px;
+		background-color: #f1f1f2;
+    	border: 1px solid #bdc0cd9e;
+    	border-top:none;
+	}
+	.nxs-release-last h3{
+	    text-align: left;
+	    padding: 7px 0px 5px 50px;
+	    background-color: #f1f1f2e6;
+	}
+	.nxs-release-last-top{
+		position: relative;
+		bottom: 50px;
+	}
+	.nxs-release-last-top-dw{
+	    display: flex;
+	    justify-content: space-between;
+	    font-size: 12px;
+	    position: relative;
+	    top: 50px;
+	    padding: 16px 0px 0px 30px;
+	}
+	.nxs-release-content{
+	    height: 85px;
+	    opacity: 0;
+	    z-index: 2;
+	    position: relative;
+	    color: #262931;
+	    top: 0px;
+	    background-color: #ffffffc7;
+	}
+	.nxs-release-last:hover .nxs-release-content{
+		opacity: 1;
+
+	}
+	.nxs-release-last-jacket{
+		width: 100%;
+		height: 200px;
+		border:none;
+		background-color:#4f5560b8;
+		margin-right: 20px;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+	}
+    .nxs-release-last-jacket input[type="submit"]{
+            border:none;
+            color:#ff8c3f;
+            opacity: 0;
+            margin-right: 20px;
+            background-color: transparent;
+            font-family: 'Timeless';
+            float: right;
+    }
+        .nxs-release-last:hover input[type="submit"]{
+                opacity: 1;
+                transform: translateY(-5px);
+                transition: all .5s;
+        }
+	.nxs-release-last-mid{
+	    height: 100%;
+	    padding: 10px 10px 0px 30px;
+	    position: relative;
+	    top: -30px;
+	}
+	.nxs-release-last-bot{
+		position: relative;
+		top: 0px;
+		display: flex;
+		height: 40px;
+		padding: 5px 10px 5px 10px;
+		justify-content: space-between;
+		font-size: 14px;
+		border-top: 1px solid #bdc0cd;	
+	}
+	.nxs-release-last-bot-cat{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.nxs-release-last-bot-sign{
+		width: 150px;
+	}
+
+/* -- Article 												-- */
+	section.article{
+		margin-bottom: 20px;
+		padding: 0px 40px 0px 40px;
+	}
+	section.article h3{
+		display: flex;
+		justify-content:space-between;
+		height: 35px;
+		line-height: 30px;
+	}
+	.articleTop{
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 20px 0px 20px;
+	}
+	.articleCat{
+		line-height: 35px;
+	}
+	.articleDate{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 20px;
+		font-size: 13px;
+		border-top: 1px solid #33363d20;
+		padding: 50px 20px 0px 20px;
+	}
+	.articleContent{
+		padding: 10px 50px 30px 50px;
+	}
+	.articleContent p{
+		font-size: 14px;
+	}
+	.articleAuthor{
+		min-height: 80px;
+		max-height: 80px;
+		margin :5px 0px 50px 0px;
+		display: flex;
+		justify-content: center;
+	}
+	.articleAuthor .authorName{
+		background-color:#a6a9b1d1;
+		border-left: 10px solid #ff8c3f;
+		width: auto;
+		padding: 10px 50px 5px 50px;
+		border-right: 1px solid white;
+	}
+	.articleAuthor .authorName a{
+		color:white;
+		text-align: center; 
+	}
+	.articleAuthor .authorQuote{
+		background-color:#a6a9b1d1;
+		width: 100%;
+		font-style: italic;
+		text-align: center;
+		color: white;
+		font-size: 14px;
+		padding: 10px 70px 0px 50px;
+	}	
+/* -- Comment 												-- */
+	.commentSection{
+		background-color: #f1f1f2;
+		margin: 10px 0px 5px 0px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		padding: 20px 40px 10px 35px;
+	}
+	.responseSection{
+		display: none;
+		flex-direction: column;
+		background-color: #e6e6e6;
+	}	
+	.commentResponseSection{
+	    background-color: #f1f1f2;
+	    margin: 0px 0px 1px 0px;
+	    width: 85%;
+	    display: flex;
+	    justify-content: flex-start;
+	    padding: 20px 40px 4px 30px;
+	    border-left: 5px solid #ff8c3f;
+	    border-top: 1px solid white;
+	    margin-left: 15%;
+	}
+	.commentResponses{
+		cursor: pointer;
+		background-color: #ff8c3f;
+		text-align: center;
+		color: white;
+		padding: 1px 5px 1px 5px;
+		font-size: 14px;
+	}
+	.commentSide{
+		border-right: 1px solid #33363d20;
+		min-height: 80px;
+		width: 160px;
+		padding-right: 30px;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+    	text-align: center;
+	}
+	.commentAvatar{
+		border: 1px solid #b6b9bf;
+	    border-radius: 50px;
+	    height: 75px;
+	    width: 75px;
+	    margin: 20px 17px 20px 17px;
+	    padding: 4px 10px 10px 10px;
+	    line-height: 68px;
+	    font-size: 45px;
+	    color: white;
+	}
+	.commentCenter{
+		padding-left: 20px;
+		width:100%;
+	}
+	.commentContent{
+		min-height: 100px;
+		width: 100%;
+		margin-bottom: 15px;
+		padding-right: 20px;
+	}
+	.commentTop{
+		display: flex;
+		justify-content: space-between;
+	}
+	.commentLike{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.commentLike button{
+		border: none;
+		background-color: #00000030;
+		cursor: pointer;
+		color: #f1f1f2;
+		width: 20px;
+    	height: 20px;
+    	font-size: 14px;
+	}
+	.commentLike button:hover{
+		background-color: #ff8c3f;
+	}
+	.commentLike .total{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: #a6a9b1;
+	    width: 30px;
+	    height: 30px;
+	    font-size: 14px;
+	    font-weight: bold;
+	}
+	.commentBot{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		height: 25px;
+		color: #0000007a;
+		font-size: 13px;
+		border-top: 1px solid #33363d20;
+		padding:5px 10px 0px 10px;
+	}
+	.commentBot button{
+		border: none;
+		background-color: #00000030;
+		cursor: pointer;
+		color: #f1f1f2;
+		font-size: 12px;
+	}
+	.commentBot button:hover{
+		background-color: #ff8c3f;
+	}
+	.isValid-comment {
+		display: flex;
+	}
+	.comment-info-text {
+	    padding: 2px 0px 0px 10px;
+	}
+/* -- add Comment 											-- */
+	.addComment{
+		display: flex;
+		background-color: #f1f1f2;
+		border-top: 2px solid #ff8c3f;
+		margin-top: 20px;
+	}
+	.addCommentLeft{
+		padding: 20px 40px 20px 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 30%;
+		border-right: 1px solid #33363d20;
+		text-align: center;
+	}
+	.addCommentLeft button{
+		background-color: #ff8c3f;
+		border: none;
+		color: white;
+		cursor: pointer;
+		color: #f1f1f2;
+		padding: 5px 10px 5px 10px;
+    	font-size: 14px;
+	}
+	.addCommentRight{
+		padding: 20px 40px 20px 40px;
+		width: 70%;
+	}
+	.addCommentRight form{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.addCommentRight form textarea{
+		height: 80px;
+	}
+	
+	.addCommentRight input[type="submit"]{
+		background-color: #00000030;
+		width: 300px;
+		margin: auto;
+		height: 30px;
+		color: white;
+		font-size: 16px;
+	}
+	
+	.addCommentRight input[type="submit"]:hover{
+		background-color: #ff8c3f;
+	}

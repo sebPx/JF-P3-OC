@@ -1,0 +1,130 @@
+/*
+    Template:       Noxus
+    Theme URL:      https://noxus.fr
+    Author:         Sebastien P.
+    Author URL:     https://noxus.fr/creator
+    Description:    Noxus engine production ©
+    Contact:        contact@noxus.fr
+    Version:        1.0
+    License:        GNU General Public License v3 or later
+    License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+    Text Domain:    Noxus ©
+    Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+*/
+
+    .profil{
+        display: flex;
+        height: 100%;
+        width: 740px;
+        margin: auto;
+    }
+    .profil .profil-left{
+        min-width: 300px;
+        background-color: #f1f1f2;
+        max-width: 320px;
+        border-right: 1px solid #bdc0cd;
+        margin-right: 10px;
+        padding: 15px 0px 5px 0px;
+    }
+    .profil-title{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 130px;
+        margin-top: 10px;
+        border-bottom: 3px solid #bdc0cd;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        background-color: #f1f1f2;
+    }
+    .profil-title .title-left{
+        width: 320px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .profil-title .title-right{
+        width: 420px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .profil-title .title-left img{
+        width: 70px;
+        height: 70px;
+        margin: 10px 105px 0px 105px;
+        text-align: center;
+    }
+    .profil ul li{
+        list-style: none;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 10px 0px 20px;
+        border-left: 3px solid #f1f1f2;
+    }
+    .profil ul li:hover{
+        background-color: #e6e6e6;
+        color: #ff8c3f;
+        border-left: 3px solid #ff8c3f;
+    }
+    .profil .profil-nav{
+        
+    }
+    .profil .profil-right{
+        padding: 20px 20px 0px 20px;
+        height: 100%;
+        width: 460px;
+        min-height: 500px;
+    }
+    .profil .profil-right h3{
+        text-align: center;
+    }
+    .profil .profil-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px 0px 20px 20px;
+        height: 320px;
+    }
+    .profil .profil-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0px 0px 20px 20px;        
+    }
+    .profil .profil-bot{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0px 0px 20px 20px;        
+    }
+    .policies{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: #a7a7a73d;
+        border-top: 1px solid #bdc0cd;
+        padding: 10px 25px 0px 0px ;  
+    }
+    .policies .policies-content{
+        width: 740px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        text-align: justify;
+        min-height: 300px;
+        line-height: 20px;
+        padding: 0px 5px 0px 5px;
+    }
+    .profil input[type="submit"]{
+        padding: 10px 20px 10px 20px;
+        background-color: #ff8c3f;
+        color: white;
+    }
+    .profil input[type="submit"]:hover{
+        padding: 10px 20px 10px 20px;
+        background-color: #ff8c3f;
+        color: white;
+    }

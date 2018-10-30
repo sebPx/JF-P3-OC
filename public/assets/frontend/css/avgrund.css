@@ -1,0 +1,121 @@
+.avgrund-popin {
+	position: absolute;
+	background: #fff;
+	padding: 10px;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: 40%;
+	left: 50%;
+	z-index: 1000;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.avgrund-overlay {
+	background: #000;
+	width: 100%;
+	position: relative;
+	top: -1500px;
+	left: 0;
+	z-index: 101;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+
+}
+
+body.avgrund-active {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	overflow: hidden;
+}
+
+.avgrund-active .avgrund-popin {
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.avgrund-active .avgrund-overlay {
+	visibility: visible;
+	opacity: .5;
+	top:-3500px;
+	filter: alpha(opacity=50);
+	height: 20000px;
+}
+
+.avgrund-popin.stack {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.avgrund-active .avgrund-popin.stack {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.avgrund-active .avgrund-blur {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}
+
+/* Optional close button styles */
+.avgrund-close {
+
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	background:#6f6f6f;
+	border-radius: 2px 2px ;
+	padding: 1px 5px;
+	cursor: pointer;
+	color: #FFF;
+	line-height:20px;
+	font-size: 10px;
+	font-family:"Open Sans", Arial, sans-serif;
+
+	-webkit-transition: 0.15s background ease;
+	   -moz-transition: 0.15s background ease;
+	    -ms-transition: 0.15s background ease;
+	     -o-transition: 0.15s background ease;
+	        transition: 0.15s background ease;
+}
+	.avgrund-close:hover {
+		background: #1a8ae2;
+		color: #FFF;
+	}
+	.avgrund-close:active {
+		background: #1a8ae2;
+		color: #FFF;
+	}
+
+

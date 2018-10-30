@@ -1,0 +1,286 @@
+/*
+    Template:       Noxus
+    Theme URL:      https://noxus.fr
+    Author:         Sebastien P.
+    Author URL:     https://noxus.fr/creator
+    Description:    Noxus engine production ©
+    Contact:        contact@noxus.fr
+    Version:        1.0
+    License:        GNU General Public License v3 or later
+    License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+    Text Domain:    Noxus ©
+    Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- Ecran d'administration -------
+*/
+
+/* -- admin login                 popup -- */
+    #pop-login input[type='button'],input[type='text'],input[type='password'],input[type='submit'] {
+        padding: 2px 5px 2px 5px ;
+    }  
+    form.form-pop-login{
+        width: 100%;
+        height: 100%;
+    }
+    .top-pop-login{
+        width: 100%;
+        height:30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cccccc90;
+    }
+    #pop-login{
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        color: #191c2396;
+        margin:5px 0px 0px 0px;
+    }
+    .top-pop-login h2{
+        line-height: 30px;
+        font-size: 16px;
+        margin: 0px 0px 0px 0px ;
+        color: #191c2396;
+        text-align: center;
+    }
+    #pop-login h3{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 10px 0px 10px 0px ;
+        color: #191c2396;
+    }
+    #pop-login .id-login{
+        width: 100%;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 40px 0px 40px;
+    }
+    #pop-login .reg-login{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        font-size: 14px;
+        line-height: 30px;
+        justify-content: center;
+        margin-top: 14px;
+    }
+    #pop-login .reg-login a{
+        padding:0px 10px 0px 10px ;
+        font-size: 14px;
+    }
+    #pop-login input[type="submit"]{
+        border: none;
+        color: white;
+        background-color: #ff8c3f;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #pop-login input[type="submit"]:hover{
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #ff8c3f;
+    }
+/* -- admin logout                popup -- */
+    #downlog{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 30px 30px 30px 30px;
+    }
+/* -- admin register              popup -- */
+    #pop-register{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    #pop-register .register-infos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-bottom: 1px solid #cccccc90;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .register-pass{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-bottom: 1px solid #cccccc90;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    #pop-register .register-pass button#unmask{
+        width: 60%;
+        margin: auto;
+        color: #464646;
+        font-family: 'Timeless';
+        font-size: 12px;
+        padding: 10px 5px 5px 5px;
+        text-decoration: none;
+        background-color:#FFF;
+        border:none;
+    }
+    #pop-register .reg-login{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+        height: 15px;
+        font-size: 14px;
+    }
+/* -- admin Auth                  popup -- */
+    #pop-auth h3{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 10px 0px 10px 0px ;
+    }
+    #pop-auth{
+    height: 130px;
+    font-size: 14px;
+    padding-top: 5px;
+    }
+    .auth-code{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
+/* -- admin Contact               popup -- */
+    section.contact{
+        display: flex;
+        padding: 0px 100px 0px 100px;
+    }
+     p {
+        
+    }
+    .contact-left-nav {
+        min-width: 220px;
+        background-color: #f1f1f2;
+        border-right: 1px solid #bdc0cd;
+        padding-top: 20px;
+    }
+    .contact-right-panel {
+        padding-top: 15px;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .courier-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 860px;
+        padding-left: 5px;
+    }
+    .courier-content h4{
+        padding: 10px 0px 10px 20px;
+        font-size: 17px;
+    }
+    .courier-content .courier-top{
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 20px 10px 20px;
+    }
+    .courier-content .courier-bot{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px 20px 50px 20px;
+    }
+    .courier-content .courier-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 350px;
+        padding: 10px 20px 10px 20px;
+    }
+    .courier-content .courier-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+    }
+    .contact-left-nav ul li{
+        list-style: none;
+        border-left: 3px solid #f1f1f2;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 10px 0px 20px;
+    }
+    .contact-left-nav ul li:hover{
+        background-color: #e6e6e6;
+        color: #ff8c3f;
+        border-left: 3px solid #ff8c3f;
+    }
+    .courier-content input[type="submit"]{
+        border: none;
+        color: white;
+        background-color: #ff8c3f;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .courier-content input[type="submit"]:hover{
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #ff8c3f;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #a7a7a73d;
+        border-top: 1px solid #bdc0cd;
+        padding: 0px 0px 0px 0px ;  
+    }
+    .contact-info h3{
+        text-align: center;
+    }
+    .contact-info-content{
+        width: 1280px;
+        display: flex;
+        margin: auto;
+        min-height: 180px;
+        line-height: 20px;
+        padding: 12px 100px 0px 100px;
+    }
+    .contact-info-content .coord{
+        width: 260px;
+        text-align: center;
+        display: flex;
+    }
+    .contact-info-content .contact-info-right{
+        width: 860px;
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact-info-content .contact-info-left{
+        min-width: 220px;
+        border-right: 1px solid white;
+        padding-top: 20px;
+        padding: 25px 55px 25px 55px;
+    }
+    .contact-info-content .coord .content-coord{
+        width: 260px;
+        text-align: center;
+    }

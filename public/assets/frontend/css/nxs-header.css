@@ -1,0 +1,193 @@
+/*
+Template:       Noxus
+Theme URL:      https://noxus.fr
+Author:         Sebastien P.
+Author URL:     https://noxus.fr/creator
+Description:    Noxus engine production ©
+Contact:        contact@noxus.fr
+Version:        1.0
+License:        GNU General Public License v3 or later
+License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain:    Noxus ©
+Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- HEADER -------
+
+*/
+header{
+	width: 100%;
+	height: 660px;
+}
+
+/* -- Barre de navigation = #header_bar 		-- */
+	#header{
+		position: absolute;
+		width: 100%;
+		z-index: 99;
+	}
+	#header_bar{
+		height: 65px;
+		width: 100%;
+		background-color: #3a4144db;
+		border-bottom: 1px solid #ffffff12;
+	}
+	/* Menu navigation + sticky*/
+		.nav-is-stuck #header_bar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #343c3fd9;
+			border-bottom: 1px solid #ffffff12;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+			animation: stickAnim 0.6s;
+		} 
+		@keyframes stickAnim {
+		0% 		{transform: translateY(-75px);}
+		100% 	{transform: translateY(0);}
+		}
+
+	#header_bar .teg_container{
+		height: 65px;
+		display: flex;
+		justify-content: space-between;
+	}
+	#header_bar .teg_container figure.logo_header{
+		width: 9%;
+		line-height: 60px;
+	}
+	#header_bar .teg_container nav.header{
+		width: 60%;
+	}
+	#header_bar .teg_container nav.header ul.header_nav{
+		display: flex;
+		justify-content: flex-end;
+		line-height: 65px;
+	    padding-right: 38px;
+	    border-right: 1px solid #ffffff05;
+	}
+	#header_bar .teg_container nav.header_log{
+		width: 20%;
+	}
+	#header_bar .teg_container nav.header_log ul.header_log{
+		display: flex;
+		justify-content: flex-end;
+		line-height: 65px;
+		font-size: 14px;
+	}
+	#header_bar .teg_container ul li{
+		list-style-type: none;
+		margin: 0px 20px 0px 20px;
+		text-align: center;
+	}
+	#header_bar .teg_container ul li a{
+		line-height: 25px;
+		font-size: 15px;
+	}
+	#header_bar .teg_container ul li input[type='button']{
+		color: #969dac;
+		font-family: 'Timeless';
+		line-height: 25px;
+		font-size: 14px;
+		padding: 2px 10px 2px 10px ;
+		text-decoration: none;
+		border:1px solid #969dac8f;
+		border-radius:10px;
+		background-color:transparent; 
+	}
+	#header_bar .teg_container ul li input[type='button']:hover{
+		color: #ff8c3f;
+		cursor:pointer;
+		font-family: 'Timeless';
+		line-height: 25px;
+		font-size: 14px;
+		padding: 2px 10px 2px 10px ;
+		text-decoration: none;
+		border:1px solid #ffdb318f;
+		border-radius:10px;
+		background-color:transparent; 
+	}
+	#header_bar .teg_container ul li input#register-btn[type='button']{
+		color: #969dac;
+		font-family: 'Timeless';
+		line-height: 25px;
+		font-size: 14px;
+		padding: 16px 10px 16px 10px;
+		text-decoration: none;
+		background-color:transparent;
+		border:none;
+	}
+	#header_bar .teg_container ul li input#register-btn[type='button']:hover{
+		color: #ff8c3f;
+		cursor:pointer;
+		font-family: 'Timeless';
+		line-height: 25px;
+		font-size: 14px;
+		padding: 2px 10px 2px 10px ;
+		text-decoration: none;
+		background-color:transparent;
+		border:none; 
+	}
+	#header_bar .teg_container ul li input[type='submit']{
+		color: #969dac;
+		font-family: 'Timeless';
+		line-height: 25px;
+		font-size: 14px;
+		padding: 2px 16px 2px 16px ;
+		text-decoration: none;
+		background-color:transparent;
+		border:none;
+	}
+	#header_bar .teg_container ul li input[type='submit']:hover{
+		color: #ff8c3f;
+		cursor: pointer;
+	}
+	/* Animation du lien */
+		#header_bar .teg_container ul.header_nav li:after{
+			content: "";
+			height: 1px;
+			position: relative;
+			bottom:2px;
+			width: 100%;
+			background-color: #ff8c3f;
+			z-index: 101;
+			display: block;
+		/* Préparation de notre animation */
+			opacity: 0;
+			transform: translateX(1px);
+			transition: all 0.7s;
+		}
+		/* Le trait va remonter et apparaitre */
+			#header_bar .teg_container ul.header_nav li:hover:after, #header_bar .teg_container ul.header_nav:hover li:focus:after {
+				opacity: 1;
+				transform: translateY(1px);
+				z-index: 101;
+			}
+			#header_bar .teg_container ul.header_nav li:focus{
+				color: #ff8c3f;
+			}
+		/* Je vire outline car juste au-dessus je définis un style :focus */
+			#header_bar .teg_container ul.header_nav li:focus{
+				outline: none;
+			}
+/* -- Slider entête = #slider_header 			-- */
+	#slider_header{
+		width: 100%;
+		height: 620px;
+		margin:auto auto auto 0px;
+	}
+	#slider_header .slider_part{
+		width: 100%;
+		height: 100%;
+	}
+	#slider-overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		height: 680px;
+		z-index: 21;
+		top:0;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		background-position:bottom;
+	}

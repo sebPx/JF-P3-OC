@@ -1,0 +1,241 @@
+/*
+    Template:       Noxus
+    Theme URL:      https://noxus.fr
+    Author:         Sebastien P.
+    Author URL:     https://noxus.fr/creator
+    Description:    Noxus engine production ©
+    Contact:        contact@noxus.fr
+    Version:        1.0
+    License:        GNU General Public License v3 or later
+    License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+    Text Domain:    Noxus ©
+    Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- GENERAL -------
+/* micro reset */
+    * {
+        box-sizing: border-box;     
+    }
+    html, body, ul {
+        padding: 0; margin: 0;
+    }
+    #modal-window .modal-box.modal-type-primary .modal-title {
+        background-color: #ff8c3f;
+    }
+    #frontend{
+      color: #838994;  
+    }
+    #frontend input{
+        min-height: 35px;
+    }
+
+/* -- GLOBAL (HTML/BODY)                                    -- */
+        @font-face {
+         font-family: 'Quicksand-Light';
+         src: url("../font/Quicksand-Light.otf") format("opentype");
+        }
+
+        @font-face {
+         font-family: 'JosefinSans-Light';
+         src: url("../font/JosefinSans-Regular.ttf") format("opentype");
+        }
+
+        @font-face {
+         font-family: 'Timeless';
+         src: url("../font/Timeless.ttf") format("opentype");
+        }
+        
+        html, body, article, header, footer, a, input{
+            font-family: 'Timeless';
+        }
+        html, body{
+        	width: 100%;
+        	margin: 0px 0px 0px 0px; 
+        }
+        body{
+            overflow-y: hidden;  
+        }
+        a {
+            color: #c5c5c5;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff8c3f;
+            text-decoration: none;
+        }
+        input[type="submit"]{
+                border: none;
+                min-height: 35px;
+                color: #777777;
+                background-color: transparent;
+        }
+        input[type="submit"]:hover{
+                border: none;
+                color: #ff8c3f;
+                cursor: pointer;
+                background-color: transparent;
+        }
+        input[type="submit"]:focus{
+            outline: none;
+        }
+        input[type="button"]:focus{
+            outline: none;
+        }
+        input[type="text"]{
+            border: none;
+            padding: 6px 10px 7px 10px;
+            border-top: 1px solid #c5c5c530;
+            border-bottom: 3px solid #c5c5c5;
+            margin: 2px 0px 2px 0px;
+            min-height: 35px;
+            background-color: transparent;
+            color: #777777;
+
+        }
+        input[type="text"]:focus{
+            border: none;
+            padding: 6px 10px 7px 10px;
+            border-top: 1px solid #c5c5c530;
+            border-bottom: 3px solid #ff8c3f;
+            background-color: transparent;
+            margin: 2px 0px 2px 0px;
+            outline:  none;
+        }
+        input[type="password"]{
+            border: none;
+            padding: 5px 10px 5px 10px;
+            border-top: 1px solid #c5c5c530;
+            border-bottom: 3px solid #c5c5c5;
+            background-color: transparent;
+            margin: 2px 0px 2px 0px;
+            min-height: 35px;
+            color: #777777;
+
+        }
+        input[type="password"]:focus{
+            border: none;
+            border-top: 1px solid #c5c5c530;
+            background-color: transparent;
+            border-bottom: 3px solid #ff8c3f;
+            margin: 2px 0px 2px 0px;
+            outline:  none;
+        }
+        select{
+            border: none;
+            padding: 0px 40px 0px 10px;
+            border-bottom: 2px solid #c5c5c5;
+            margin: 2px 0px 2px 0px;
+            background-color: transparent;
+            font-family: 'Timeless';
+            min-height: 35px;
+            color: #777777;
+            height: 25px;
+        }
+        select:focus{
+            border: none;
+            border-bottom: 2px solid #ff8c3f;
+            background-color: transparent;
+            font-family: 'Timeless';
+            margin: 2px 0px 2px 0px;
+            height: 25px;
+            outline:  none;
+        }
+/* -- Général des containers                                -- */
+        .teg_container{
+            width: 100%;
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .loader{
+            position: absolute;
+            padding-top: 19%;
+            z-index: 2000;
+            background-color: #2d313a;
+            background-image: url("../images/loadingGifp.gif");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            text-align: center;
+            color: #cccccc90;
+            top : 0px;
+            left : 0px;
+            height : 100%;
+            width : 100%;
+            cursor : wait;
+            font-size: 15px;
+            font-weight: none;
+        }
+        .loader h4#loading-text ,.loader h4#bvn {
+            display: none;
+            color: #c5c5c5;
+            font-size: 22px;
+            font-family: 'Timeless';
+            text-decoration: none;
+            font-weight: normal;
+        }
+/* -- Général des scrollbars                                -- */
+    ::-webkit-scrollbar {                                   /* Scrollbars */
+        width: 10px;
+        height: 16px;
+        background: #f1f1f2;
+    }
+    ::-webkit-scrollbar-track-piece {                       /* Fond */
+        background: transparent none;
+        border: solid 2px transparent;
+        border-right-width: 8px;
+        margin: 4px;
+        -webkit-box-shadow: inset 1px 1px 0 0 rgb(137,131,117), inset -1px -1px 0 0 rgb(224,220,210);
+    }
+    ::-webkit-scrollbar-track-piece:horizontal {            /* Fond pour la barre du bas */
+        border-right-width: 4px;
+        border-bottom-width: 8px;
+    }
+   ::-webkit-scrollbar-thumb {                             /* Barre */
+        border: solid 0 transparent;
+        border-right-width: 5px;
+        border-left-width: 1px;
+        -webkit-border-radius: 5px;
+        -webkit-border-top-right-radius: 20px 5px;
+        -webkit-border-bottom-right-radius: 20px 5px;
+        -webkit-box-shadow: inset 0 0 0 1px #1a1b1da1, inset 0 0 0 6px #1a1b1da1;
+    }
+    ::-webkit-scrollbar-thumb:hover {                       /* Barre */
+        -webkit-box-shadow: inset 0 0 0 1px rgb(90,90,90), inset 0 0 0 6px rgb(110,110,110);
+    }
+    ::-webkit-scrollbar-thumb:horizontal {                  /* Barre du bas */
+        border: solid 0 transparent;
+        border-right-width: 5px;
+        border-left-width: 1px;
+        -webkit-border-radius: 5px;
+        -webkit-border-top-right-radius: 20px 5px;
+        -webkit-border-bottom-right-radius: 20px 5px;
+    }
+/* -- BTN Header                                -- */
+    #header .launcher{
+        border:1px solid #c5c5c5;
+        background-color: transparent;
+        color: #c5c5c5;
+        border-radius: 15px;
+        padding: 7px 20px 7px 20px;
+        font-family: 'Timeless';
+        font-size: 15px;
+    }
+    #header .getter{
+        border:none;
+        background-color: transparent;
+        color: #c5c5c5;
+        font-size: 15px;
+        font-family: 'Timeless';   
+    }
+
+    #header .getter:hover{
+        cursor: pointer;
+        color: #ff8c3f; 
+    }
+
+    #header .launcher:hover{
+        cursor: pointer;
+        color: #ff8c3f;
+        border-color: #ff8c3f;
+    }
