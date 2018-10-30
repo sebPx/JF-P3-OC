@@ -105,7 +105,7 @@ class ServiceEvent extends Service{
 					));
 			break;		
 			case 'edit':
-					$returnVar = (($this->_template != $this->_module || $this->_module == "user") && $this->_template != "page") ? "formReturn" : "form";	
+					$returnVar = (($this->_template != $this->_module || $this->_module == "user") && $this->_template != "article" && $this->_template != "page") ? "formReturn" : "form";	
 					$entity = $this->_model->getBy("id",$this->_httpRequest->postData('target'),$this->_attribute);
 					$formReturned = $this->_form->formInquire($entity);
 					return $this->payback (array( 
