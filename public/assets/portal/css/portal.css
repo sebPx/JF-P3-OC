@@ -1,0 +1,227 @@
+/*
+Template:       Noxus
+Theme URL:      https://noxus.fr
+Author:         Sebastien P.
+Author URL:     https://noxus.fr/creator
+Description:    Noxus engine production ©
+Contact:        contact@noxus.fr
+Version:        1.0
+License:        GNU General Public License v3 or later
+License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain:    Noxus ©
+Mention légale: Textes codés et utilisés par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- LOGIN -------
+
+*/
+
+/* -- GLOBAL (HTML/BODY) -- */
+        @font-face {
+         font-family: 'JosefinSans-Light';
+         src: url("../font/JosefinSans-Regular.ttf") format("opentype");
+        }
+        
+        html, body, article, header, footer, a{
+            font-family: 'JosefinSans-Light';
+        }
+/* -- Fin GLOBAL -- */
+
+/* -- HEADER (MASTHEAD) -- */
+/* -- Fin HEADER -- */
+
+/* -- CONTENT (PAGE) -- */
+    /* -- Connexion --*/
+        body{
+            background-color: #666;
+            width: 100%;
+            height: auto;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #errorArea{
+            margin: auto;
+            width: 100%;
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+            border: 1px solid #ff6161;
+            color: #ff6161;
+            display: none;
+        }
+        #login{
+            width: 100%;
+        }
+        #panel{
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        section{
+            background-color: #134873;
+            width: 100%;
+            min-height:280px;
+            margin-top: 12%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        article.logo{
+            border-right: 1px dashed #666;
+            width: 120px;
+            min-height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding:0px 70px 0px 10px;
+            margin: 0px 70px 0px 0px;
+        }
+        section article.logo img{
+            width: 120px;
+            min-height: 120px;
+            margin: 45px;
+        }
+        article.connexion{
+            font-family: 'JosefinSans-Light';
+            display: flex;
+            width: 320px;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0px 10px 0px 0px;
+        }
+        section article.connexion h1{
+            text-align: center;
+            color: white;
+        }
+        label{
+            margin:10px 10px 10px 10px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: white;            
+        }
+        input[type='text']{
+            width: 100%;
+            height: 30px;
+            border: 1px solid #ffffff;
+            background: #EEEEEE;
+            color: #666666;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            margin: 0;
+            padding: 5px;
+        }
+        input[type='password']{
+            width: 100%;
+            height: 30px;
+            border: 1px solid #ffffff;
+            background: #EEEEEE;
+            color: #666666;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            margin: 0;
+            padding: 5px;
+        }
+        section article.connexion form#loginform{
+            margin-top: 25px;
+        }
+        section article.connexion .bottom{
+            height: 50px;
+            display: flex;
+            border-top: 1px dashed #666;
+            margin-top: 30px;
+            padding: 5px 20px 0px 20px;
+            justify-content: space-around;
+            color: white;
+        }
+        input[type='submit']{
+            background-color: #666;
+            padding: 10px 10px 10px 10px;
+            color: white;
+            border:none;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        input[type="checkbox"]{
+            display: inline-block;
+            position: relative;
+            padding: 8px;
+            background-color: #F0BAB9;
+            border: 1px solid #3E0E0D;
+            border-radius: 50%;     
+        }
+        input[type="checkbox"]:checked{
+            background-color: #D9534F;
+            color: #A4B7C6;
+        }
+        input[type="checkbox"]:checked:after {
+            position: absolute;
+            left: 4px;
+            top: 0px;
+            color: #fff; 
+            content: '\2714'; 
+            font-size: 10px;
+        } 
+        .bottom-nav{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+            margin-left: 0px;
+            background-color: #ffffff2b;
+        }
+        .bottom-nav a{
+            line-height: 30px;
+            font-size: 12px;
+        }
+        footer{
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            margin: auto auto 20px auto;
+            width: 100%;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        footer a{
+            line-height: 30px;
+            font-size: 12px;
+        }
+
+/* -- fin CONTENT -- */
+
+/* -- SIDE BAR (MENU DROITE) -- */
+/* -- Fin SIDEBAR -- */
+
+/* -- FOOTER -- */
+/* -- Fin FOOTER -- */
+
+/* -- FORMULAIRE CONTACT -- */
+/* -- Fin FORMULAIRE CONTACT -- */
+
+/* -- @MEDIA 1080 PX -- */
+    @media screen and (max-width: 1080px)
+    {
+
+    }
+/* -- Fin @MEDIA 1080 PX  -- */
+
+/* -- @MEDIA 400 PX PHONE-- */
+    @media screen and (max-width: 400px)
+    {
+        
+    }
+/* -- Fin @MEDIA 400 PX PHONE -- */
