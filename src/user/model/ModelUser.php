@@ -48,8 +48,8 @@ class ModelUser extends Model{
 		$req->closeCursor(); // Termine le traitement de la requête
 		$this->count();	
 		
-		$this->_tracker->log("noxus.fr",'3001', $inquire[':login']);
-		$this->_tracker->notification("noxus.fr",'4001', $inquire[':login'], "3");
+		$this->_tracker->log("Site web",'3001', $inquire[':login']);
+		$this->_tracker->notification("Site web",'4001', $inquire[':login'], "3");
 		return;
 	}
 
