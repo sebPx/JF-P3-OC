@@ -1,0 +1,244 @@
+/*
+    Template:       Noxus
+    Theme URL:      https://noxus.fr
+    Author:         Sebastien P.
+    Author URL:     https://noxus.fr/creator
+    Description:    Noxus engine production ©
+    Contact:        contact@noxus.fr
+    Version:        1.0
+    License:        GNU General Public License v3 or later
+    License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+    Text Domain:    Noxus ©
+    Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- Ecran d'administration -------
+*/
+
+    article#review{
+        display: flex;
+        width: 100%;
+    }
+
+    article#review .review-left{
+        min-width: 300px;
+        padding: 0px 20px 0px 10px;
+        border-right:1px solid #cccccc90;
+    }
+
+    article#review .review-contact-left{
+        min-width: 350px;
+        padding: 0px 20px 0px 10px;
+        border-right:1px solid #cccccc90;
+    }
+
+    article#review .review-right{
+        width: 100%;
+        padding: 0px 10px 0px 20px;
+        overflow-y: scroll;
+        min-height: 585px;
+    }
+
+    article#review input , select{
+        width: 100%;
+    }
+    form#filter{
+        width: 100%;
+    }
+    ul{
+        list-style: none;
+    }
+    li .li-review{
+        display: flex;
+        height: 65px;
+    }
+    li .li-review-contact{
+        display: flex;
+        height: 45px;
+        cursor: pointer;
+    }
+    li .li-review:hover{
+        cursor: pointer;
+    }
+    li .li-review-content{
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    li .li-review-contact-content{
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    li .li-review-top{
+        display: flex;
+    }
+    li .li-review-bot{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2px;
+    }
+    li .li-review-contact-bot{
+        display: none;
+    }
+
+    li:hover .li-review-contact-bot{
+        display: flex;
+    } 
+    #modal-window .modal-box img.catch_btn{
+        height: 20px;
+        width: 20px;
+    }
+    li .li-review-bot img:hover{
+        cursor: pointer;
+    }
+    li .li-review-left{
+        min-width: 200px;
+    }
+    li .li-review-center{
+        width: 100%;
+    }
+    li .li-review-right{
+        min-width: 50px;
+        background-color: #676767;
+        border-left: 1px solid white; 
+        color: white;
+    }
+    
+    li .li-review-bot button.uncheck_btn{
+            border:none;
+            color:#333333;
+            padding-left: 0px;
+            opacity: 0;
+            background-color: transparent;
+            font-family: 'JosefinSans-Light';
+            float: left;
+        }
+    li .li-review-bot button.uncheck_btn:hover{
+            color: #1a8ae2;
+            cursor: pointer;
+        }
+    
+    li .li-review:hover button.uncheck_btn{
+                opacity: 1;
+                transform: translateY(2px);
+                transition: all .5s;
+        }
+    
+    li .li-review-bot button.delete_btn{
+            border:none;
+            color:red;
+            padding-right: 15px;
+            opacity: 0;
+            background-color: transparent;
+            font-family: 'JosefinSans-Light';
+            float: right;
+        }
+
+    li .li-review:hover button.delete_btn{
+                opacity: 1;
+                transform: translateY(2px);
+                transition: all .5s;
+        }
+    li .li-review-bot button.delete_btn:hover{
+            cursor: pointer;
+        }
+    article#review .add-contact{
+        border-left: 2px solid #1a8ae2;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .filter-line1, .filter-line2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-bar input{
+        border-top: 1px solid #cccccc75;
+        border-right: 1px solid #cccccc75;
+        border-left: 1px solid #cccccc75;
+        height: 30px;
+        background-color: #29292910;
+        margin: 0px 0px 0px 0px;
+    }
+    .filter-bar input:focus{ 
+        height: 30px;
+        padding:2px 5px 2px 5px;
+        margin: 0px 0px 0px 0px;
+
+    }
+   .filter-bar select{
+        border-top: 1px solid #cccccc75;
+        border-right: 1px solid #cccccc75;
+        border-left: 1px solid #cccccc75;
+        height: 30px;
+        background-color: #29292910;
+        margin: 0px 0px 0px 0px;
+    }
+    .filter-bar label{
+        border-top: 1px solid #cccccc75;
+        border-right: 1px solid #cccccc75;
+        border-left: 1px solid #cccccc75;
+        height: 35px;
+        max-width: 120px;
+        line-height: 27px;
+        border-bottom: 3px solid #3333338a;
+        margin: 0px 0px 0px 0px;
+    }
+    .filter-bar input#filter-submit-btn{
+        background-color: #1a8ae2;
+        margin-top: 5px;
+    }
+    .reg-review-table{
+        height: 100%;
+        overflow-y: scroll; 
+    }
+    .reg-review-contact-table{
+        height: 100%;
+        max-height: 72%;
+        overflow-y: scroll; 
+    }
+    .filter-bar{
+        max-height: 110px;
+    }
+
+    #admin-screen .filter-options .filter-line1, .filter-options .filter-line2{
+        display: flex;
+        justify-content: space-between;
+    }
+    #admin-screen .filter-options .filter-bar input{
+        border-top: 1px solid #cccccc75;
+        border-right: 1px solid #cccccc75;
+        border-left: 1px solid #cccccc75;
+        height: 30px;
+        background-color: #29292910;
+        margin: 0px 0px 0px 0px;
+        width: 80%;
+    }
+    #admin-screen .filter-options .filter-bar input:focus{ 
+        height: 30px;
+        padding:2px 5px 2px 5px;
+        margin: 0px 0px 0px 0px;
+
+    }
+    #admin-screen .filter-options .filter-bar select{
+        border-top: 1px solid #cccccc75;
+        border-right: 1px solid #cccccc75;
+        border-left: 1px solid #cccccc75;
+        height: 30px;
+        width: 100%;
+        background-color: #29292910;
+        margin: 0px 0px 0px 0px;
+    }
+    #admin-screen .filter-options .filter-bar label{
+        border: 1px solid #cccccc75;
+        height: 35px;
+        max-width: 120px;
+        line-height: 32px;
+        margin: 0px 0px 0px 0px;
+        font-size: 14px;
+    }
+    #admin-screen .filter-options .filter-bar input#filter-submit-btn{
+        background-color: #1a8ae2;
+        color: white;
+    }

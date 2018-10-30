@@ -1,0 +1,279 @@
+/*
+    Template:       Noxus
+    Theme URL:      https://noxus.fr
+    Author:         Sebastien P.
+    Author URL:     https://noxus.fr/creator
+    Description:    Noxus engine production ©
+    Contact:        contact@noxus.fr
+    Version:        1.0
+    License:        GNU General Public License v3 or later
+    License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+    Text Domain:    Noxus ©
+    Mention légale: Textes codés et utilisé par Noxus engine © ayant droit d'auteur sur le contenu suivant.
+
+------- Ecran d'administration -------
+*/
+
+/* -- admin dashboard                   -- */
+    .menu-review-content{
+        display: flex;
+        height: 100%;
+        margin-top: 5px;
+        padding-top: 10px; 
+    }
+    .menu-review-content .avatar{
+        width: 70px;
+        padding: 0px 10px 0px 0px;
+        border-right: 1px solid #8e8e8e50;
+    }
+    .menu-review-content .avatar img{
+        width: 55px;
+        height: 55px;
+        margin-top: 8px;
+    }
+    .menu-review-content .menu-review-content-right{
+        width: 100%;
+        padding: 0px 0px 0px 10px;
+    }
+    /* -- admin dashboard content       -- */
+        #admin-content-section #admin-home{
+            width: 100%;
+            height: 100%;
+        }
+        #admin-home-panel{
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+        #admin-home-panel .admin-home-left{
+            width: 100%;
+            height: 100%;
+            padding: 0px 15px 0px 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #admin-home-panel .admin-home-helper{
+            font-weight: inherit;
+            width: 40%;
+            min-height: 100%;
+            margin-left: 5px;
+            padding: 5px 5px 5px 5px;
+            background-color: #3c3e6514;
+            color: #333333;
+            border: 1px solid #cccccc90;
+        }
+    /* -- admin dashboard left          -- */
+        #admin-home-panel .admin-home-news{
+            max-height: 60%;
+            width: 100%;
+            display: flex;
+        }
+        #admin-home-panel .admin-home-news-l{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+        }
+        #admin-home-panel .admin-home-news-r{
+            height: 100%;
+            width: 45%;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            min-width: 350px;
+            min-height: 400px;
+        }
+        #admin-home-panel .admin-home-news h3{
+            margin: 0px auto 0px auto;
+            padding-bottom: 30px;
+            text-align: center;
+            font-weight: inherit;
+            color: #333333;
+            text-decoration: none;
+            border-bottom: 1px solid #cccccc50;
+            font-size: 16px;
+            display: block;
+        }
+
+        #admin-home-panel .admin-home-news h4, .admin-home-helper h4{
+            font-weight: inherit;
+            margin: 10px 0px 20px 0px;
+            border-bottom: 1px solid #cccccc50;
+            padding: 0px 0px 5px 10px;
+        }
+    /* -- admin dashboard actu          -- */
+        #admin-home-panel .last-post .nxs-jacket {
+            width: 100%;
+            padding: 0px 10px 0px 5px;
+        }
+        #admin-home-panel .admin-home-news .nxs-jacket-top h3{
+            font-size: 14px;
+            color:#d2d2d2;
+            margin: 0px 0px 0px 0px;
+            font-weight: bolder;
+        }
+        #admin-home-panel .last-post{
+            width: 100%;
+        }
+    /* -- admin dashboard stats         -- */
+        #admin-home-panel .home-custom:hover{
+            box-shadow: 0px 0px 12px 0px #96969690;
+            cursor: pointer;
+        }
+        #admin-home-panel .home-custom{
+            height: 292px;
+            padding: 0px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        #admin-home-panel .home-custom-srv{
+            display: flex;
+            height: 262px;
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+            border-right: 1px solid #cccccc95;
+            border-left: 1px solid #cccccc95;
+            border-bottom: 1px solid #cccccc95;
+        }
+        #admin-home-panel .home-custom-postit{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            padding: 5px 5px 5px 5px;
+            border:1px solid #cccccc95;
+            color: #333333ab;
+        }
+        #admin-home-panel .home-custom-postit textarea{
+            width: 100%;
+            height: 100%;
+            font-family: 'JosefinSans-Light';
+            border-color: #cccccc90;
+            padding-left: 5px;
+        }
+        #admin-home-panel .etat-srv-top{
+            width: 100%;
+            padding: 0px 10px 0px 10px;
+            line-height: 30px;
+            display: flex;
+            height: 30px;
+            justify-content: space-between;
+            background-color: #333333d1;
+            color: #d2d2d2;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #admin-home-panel .home-custom-srv .etat-srv{
+            display: flex;
+            height: 100%;
+            width: 60%;
+            border-right:1px solid #cccccc50;
+            margin-right: 10px;
+        }
+        #admin-home-panel .home-custom-srv .etat-srv ul li{
+            border:none;
+        }
+        #admin-home-panel .home-custom-srv ul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #admin-home-panel .home-custom-srv .stats-list ul li{
+            display: flex;
+            justify-content: space-around;
+            border-left: none;
+            padding-left: 20px;
+        }
+        #admin-home-panel .home-custom-srv .stats-list ul li:hover{
+            border-right: 1px solid #1a8ae2;
+        }
+        #admin-home-panel .home-custom-srv .stats-list{
+            height: 100%;
+            width: 40%;
+            padding: 10px 10px 0px 10px;
+            margin: 0px 0px 0px 10px;
+            border-left: 1px solid #1a8ae2;
+        }
+        .stat-name{
+            width: 58%;
+            padding-right: 5px;
+            text-align: right;
+        }
+        .stat-nb{
+            width: 42%;
+            padding-left: 5px;
+            text-align: left;
+        }
+    /* -- admin dashboard logs          -- */
+        #admin-home-panel .reg-logs-list{
+            max-height: 35%;
+            width: 100%;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            background-color: #8a8a8a29;
+            cursor: pointer;
+        }
+        .reg-logs-table {
+            overflow-y: scroll;
+        }
+        #admin-home-panel ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #admin-home-panel ul li{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            color: #333333;
+            border-bottom: 1px solid #cccccc50;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        #admin-home-panel ul li:hover{
+            background-color: #cccccc75;
+            border-left: 1px solid #1a8ae2;
+        }
+        #admin-home-panel ul li .logs-actor{
+            min-width: 190px;
+            background-color: #8a8a8a1f;
+            padding-left: 30px;
+        }
+        #admin-home-panel ul li .logs-object{
+            min-width: 400px;
+            width: 500px;
+            padding-left: 30px;
+            background-color: #8a8a8a1f;
+        }
+        #admin-home-panel ul li .logs-action{
+            width: 250px;
+            padding-left: 30px;
+        }
+        #admin-home-panel ul li .logs-date{
+            width: 160px;
+            font-size: 12px;
+        }
+        #admin-home-panel .reg-logs-list-title ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        #admin-home-panel .reg-logs-list-title{
+            border-top: 1px solid #cccccc70;
+            height: 40px;
+            line-height: 40px;
+            padding-left:30px;
+            border-bottom: 3px solid #cccccc90;
+        }
+        #admin-home-panel .reg-logs-list-title ul li:hover{
+            background-color: #cccccc90;
+            border: none;
+        }
+        #admin-home-panel .reg-logs-list-title ul li{
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            color: #1f1f1f;
+        }
